@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #145a20;
+  font-family: 'Segoe UI', 'Microsoft JhengHei', 'PingFang TC', 'Noto Sans TC', sans-serif;
+}
+button {
+  font-family: inherit;
+}
+
+/* 牌桌背景 */
+.bg-green {
+  background: radial-gradient(ellipse at 50% 30%, #3f9b46 0%, #237a2e 45%, #11521b 100%);
+}
+.bg-blue {
+  background: radial-gradient(ellipse at 50% 30%, #3a7cc4 0%, #1f5596 45%, #0d2d5c 100%);
+}
+.bg-red {
+  background: radial-gradient(ellipse at 50% 30%, #a8384a 0%, #7d1f30 50%, #4a0d18 100%);
+}
+.bg-wood {
+  background:
+    repeating-linear-gradient(92deg, rgba(0, 0, 0, 0.06) 0 3px, transparent 3px 11px),
+    repeating-linear-gradient(88deg, rgba(255, 255, 255, 0.04) 0 2px, transparent 2px 17px),
+    linear-gradient(180deg, #8a5a2b, #6b4220 60%, #4f2f15);
+}
+.bg-night {
+  background: radial-gradient(ellipse at 50% 20%, #3b3f58 0%, #22253a 50%, #0e0f1a 100%);
+}
+
+/* Windows 7 按鈕 */
+.btn {
+  min-width: 86px;
+  height: 24px;
+  padding: 0 12px;
+  font-size: 13px;
+  color: #1e1e1e;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #f2f2f2, #ebebeb 50%, #dddddd 51%, #cfcfcf);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  cursor: default;
+}
+.btn:hover:not(:disabled) {
+  border-color: #3c7fb1;
+  background: linear-gradient(to bottom, #eaf6fd, #d9f0fc 50%, #bee6fd 51%, #a7d9f5);
+}
+.btn:active:not(:disabled) {
+  border-color: #2c628b;
+  background: linear-gradient(to bottom, #e5f4fc, #c4e5f6 50%, #98d1ef 51%, #68b3db);
+}
+.btn.primary {
+  border-color: #3399ff;
+}
+.btn:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+.btn:disabled {
+  color: #838383;
+  border-color: #adb2b5;
+  background: #f4f4f4;
+}
